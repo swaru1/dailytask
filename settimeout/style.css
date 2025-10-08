@@ -2,7 +2,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: sans-serif;
+ font-family: Arial, Helvetica, sans-serif;
 }
 html,
 body {
@@ -13,11 +13,13 @@ body {
  justify-content: center;
 }
 
-
+h3{
+    font-weight: 400;
+}
 
 h4 {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
     text-align: end;
 }
 
@@ -27,10 +29,10 @@ h4 {
     gap: 10px;
     height: 200px;
     width: 600px;
-    background-color: aquamarine;
+    background-color: rgb(240, 239, 239);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.458);
+    box-shadow: 10px 10px 20px rgba(181, 175, 175, 0.755);
 }
 
 .p-bar {
@@ -42,14 +44,20 @@ h4 {
 
 .progress {
   height: 20px;
-  background: limegreen;
+  background: linear-gradient(to right, rgb(56, 214, 56), rgb(0, 255, 0));
   width: 0%;
   transition: width 0.1s linear;
 }
 
 button {
-    width: 110px;
+    width: 120px;
     align-self: center;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 25px;
+    color: rgb(94, 91, 91);
+    font-weight: 600;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.148);
+    background: rgb(250, 242, 242);
+    
 }
