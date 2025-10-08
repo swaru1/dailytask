@@ -1,0 +1,55 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+html,
+body {
+ height: 100%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: end;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+    width: 600px;
+    background-color: aquamarine;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.458);
+}
+
+.p-bar {
+    background-color: grey;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress {
+  height: 20px;
+  background: limegreen;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+button {
+    width: 110px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 5px;
+}
