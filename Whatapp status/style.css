@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#main #screen .full {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  background-color: rgba(138, 133, 133, 0.721);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+#main #screen .full .full-top .p-bar {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(196, 196, 196);
+  margin-bottom: 5px;
+}
+#main #screen .full .full-top .p-bar .prg {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+}
+#main #screen .full .full-top .nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+#main #screen .full .full-top .nav img {
+  padding: 2px;
+  border: 2px solid grey;
+  height: 35px;
+  width: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  justify-content: space-between;
+}
+#main #screen .full .full-top .nav .user-n {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+}
+#main #screen .full .full-top .nav .user-n h4 {
+  font-size: 0.8em;
+}
+#main #screen .full .full-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#main #screen .full .full-bottom .reply {
+  display: flex;
+  background-color: grey;
+  color: white;
+  width: 80%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  align-items: center;
+}
+#main #screen .full .full-bottom .like {
+  display: flex;
+  background-color: grey;
+  color: white;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 5px;
+}
+#main #screen .top .nav {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #screen .top .nav h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+#main #screen .top .search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+  background-color: rgb(233, 233, 233);
+  padding: 8px 15px;
+  border-radius: 25px;
+}
+#main #screen .top .search h3 {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+#main #screen .top .tags {
+  display: flex;
+  gap: 0.5em;
+  font-size: 0.5em;
+}
+#main #screen .top .tags a {
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  text-decoration: none;
+  color: grey;
+}
+#main #screen .mid::-webkit-scrollbar {
+  display: none;
+}
+#main #screen .mid {
+  height: 310px;
+  overflow: auto;
+}
+#main #screen .mid .dm {
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#main #screen .mid .dm img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding: 2px;
+  border: 2px solid rgb(0, 255, 30);
+  /* border: 2px solid rgb(105, 105, 105); */
+  pointer-events: none;
+}
+#main #screen .mid .dm h5 {
+  font-size: 0.7em;
+  pointer-events: none;
+}
+#main #screen .mid .dm p {
+  font-size: 0.6em;
+  color: grey;
+  pointer-events: none;
+}
+#main #screen .bottom {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#main #screen .bottom .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main #screen .bottom .options i {
+  background-color: rgb(233, 233, 233);
+  padding: 4px 8px;
+  border-radius: 15px;
+}
+#main #screen .bottom .options h5 {
+  font-size: 0.6em;
+  font-weight: 400;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */

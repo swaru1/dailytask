@@ -46,7 +46,6 @@ h4 {
   height: 20px;
   background: linear-gradient(to right, rgb(56, 214, 56), rgb(0, 255, 0));
   width: 0%;
-  transition: width 0.1s linear;
 }
 
 button {
