@@ -31,7 +31,8 @@ body {
     overflow: hidden;
 
     .full {
-      display: flex;
+      display: none;
+      /* display: flex; */
       flex-direction: column;
       justify-content: space-between;
       position: absolute;
@@ -43,11 +44,10 @@ body {
       padding: 15px;
 
       .full-top {
-        
         .p-bar {
           height: 2px;
           width: 100%;
-          background-color: rgb(196, 196, 196);
+          background-color: rgb(54, 54, 54);;
           margin-bottom: 5px;
 
           .prg {
@@ -93,7 +93,7 @@ body {
         
         .reply {
           display: flex;
-          background-color: grey;
+          background-color:rgb(54, 54, 54);;
           color: white;
           width: 80%;
           padding: 5px 15px;
@@ -104,7 +104,7 @@ body {
 
         .like {
           display: flex;
-          background-color: grey;
+          background-color: rgb(54, 54, 54);
           color: white;
           width: 30px;
           height: 30px;
@@ -170,6 +170,10 @@ body {
         display: flex;
         align-items: center;
         gap: 10px;
+
+        .info {
+          pointer-events: none;
+        }
 
         img {
           height: 40px;
