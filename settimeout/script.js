@@ -4,7 +4,7 @@ var button = document.querySelector("button");
 var progress = document.querySelector(".progress");
 var bar = document.querySelector(".p-bar");
 
-button.addEventListener("click", function (dets) {
+button.addEventListener("click", function () {
   var p = 0;
   button.disabled = true;
   button.innerHTML = "Downloading...";
