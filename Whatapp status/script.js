@@ -87,15 +87,15 @@ mid.addEventListener("click", function (dets) {
                 </div>
             </div>
             <div class="full-bottom">
-                <div class="reply">reply</div>
+                <div class="reply">Reply</div>
                 <div class="like"><i class="ri-heart-3-line"></i></div>
             </div>`;
 
-    // Animate progress bar and close automatically
+    
     const prg = document.querySelector(".prg");
     let progress = 0;
     const interval = setInterval(() => {
-      progress += 1;
+      progress ++;
       prg.style.width = progress + "%";
       if (progress >= 100) {
         clearInterval(interval);
