@@ -18,15 +18,13 @@ var randomPara = () => {
   para.innerHTML = allText[randomIdx];
 };
 
-var inputTxt = "";
 var intvl;
 var timer = 0;
 var start = false;
 
-txtArea.addEventListener("input", (dets) => {
+txtArea.addEventListener("input", () => {
   console.log("user is typing..");
   btn.innerHTML = "submit";
-  inputTxt = txtArea.value;
 
   if (!start) {
     start = true;
@@ -37,22 +35,28 @@ txtArea.addEventListener("input", (dets) => {
   }
 });
 
-btn.addEventListener("click", (dets) => {
+btn.addEventListener("click", () => {
   if (btn.innerHTML == "submit") {
-    var score = timer;
+
     clearInterval(intvl);
+    start = false;
+
+    if(txtArea.value.trim() === para.innerHTML.trim()) {
+        para.innerHTML = `Good Job! your time: ${timer} secs`
+    } else {
+        para.innerHTML = `Text didnt match try again`
+    }
+
+    txtArea.value = "";
+    txtArea.style.display = "none";
     timer = 0;
     timeCount.innerHTML = timer;
-    start = false;
-    txtArea.value = "";
-    txtArea.style.display = 'none'
-    timeCount.style.display = 'none'
-    para.innerHTML = `Your time is : ${score} secs`
+    timeCount.style.display = "none";
     btn.innerHTML = "try again";
-
   } else {
     randomPara();
     txtArea.style.display = "block";
+    timeCount.style.display = "inline-block";
     btn.innerHTML = "submit";
   }
 });
