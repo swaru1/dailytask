@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#window {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  padding: 30px;
+  text-align: center;
+}
+#window p {
+  font-size: 1em;
+}
+#window textarea {
+  padding: 10px;
+  font-size: 1.2em;
+  display: none;
+}
+#window button {
+  align-self: center;
+  padding: 8px;
+  width: 25%;
+  transition: 0.2s;
+}
+#window button:active {
+  scale: 0.95;
+}/*# sourceMappingURL=style.css.map */
