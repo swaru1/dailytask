@@ -47,7 +47,7 @@ body {
         .p-bar {
           height: 2px;
           width: 100%;
-          background-color: rgb(54, 54, 54);;
+          background-color: rgb(54, 54, 54);
           margin-bottom: 5px;
 
           .prg {
@@ -90,16 +90,17 @@ body {
       .full-bottom {
         display: flex;
         justify-content: space-between;
-        
+
         .reply {
           display: flex;
-          background-color:rgb(54, 54, 54);;
+          background-color: rgb(54, 54, 54);
           color: white;
           width: 80%;
           padding: 5px 15px;
           border-radius: 15px;
           font-size: 0.8em;
           align-items: center;
+          text-transform: capitalize;
         }
 
         .like {
@@ -165,6 +166,10 @@ body {
       height: 310px;
       overflow: auto;
 
+      .dm.seen img {
+        border: 2px solid rgb(105, 105, 105) !important;
+      }
+
       .dm {
         padding: 3px 0;
         display: flex;
@@ -190,6 +195,7 @@ body {
         h5 {
           font-size: 0.7em;
           pointer-events: none;
+          text-transform: capitalize;
         }
 
         p {

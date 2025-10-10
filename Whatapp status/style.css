@@ -96,6 +96,7 @@ body {
   border-radius: 15px;
   font-size: 0.8em;
   align-items: center;
+  text-transform: capitalize;
 }
 #main #screen .full .full-bottom .like {
   display: flex;
@@ -150,6 +151,9 @@ body {
   height: 310px;
   overflow: auto;
 }
+#main #screen .mid .dm.seen img {
+  border: 2px solid rgb(105, 105, 105) !important;
+}
 #main #screen .mid .dm {
   padding: 3px 0;
   display: flex;
@@ -175,6 +179,7 @@ body {
 #main #screen .mid .dm h5 {
   font-size: 0.7em;
   pointer-events: none;
+  text-transform: capitalize;
 }
 #main #screen .mid .dm p {
   font-size: 0.6em;
