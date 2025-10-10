@@ -66,6 +66,7 @@ body {
   border: 2px solid grey;
   height: 35px;
   width: 35px;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
